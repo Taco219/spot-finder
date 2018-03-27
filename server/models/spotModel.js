@@ -1,7 +1,7 @@
 import mongoose from 'mongoose'
 
 const spotSchema = mongoose.Schema({
-    name: {type: String, unique: true},
+    name: {type: String},
     loc: {
         type: [Number],
         index: '2d'

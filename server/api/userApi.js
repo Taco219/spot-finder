@@ -28,7 +28,6 @@ router.post('/', async (req, res) => {
 
         await user.save();
 
-
         res.send(user);
     }
     catch (err){
