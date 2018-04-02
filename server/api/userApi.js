@@ -22,7 +22,7 @@ router.post('/login', async (req, res) => {
     res.status(200).json({token: usrToken});
 });
 
-router.post('/', async (req, res) => {
+router.post('/register', async (req, res) => {
     try {
         const user = new User(req.body);
 

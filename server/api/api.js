@@ -19,7 +19,7 @@ router.get('/', async (req, res) => {
         res.send(users);
     }
     catch (err){
-        if (err.code == monErr.DuplicateKey) {
+        if (err.code === monErr.DuplicateKey) {
 
         }
         console.log("Shit");
